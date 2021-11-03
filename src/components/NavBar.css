@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "BarlowCondensed-Regular";
+  src: url("../fonts/BarlowCondensed-Regular.ttf");
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+  font-family: "BarlowCondensed-Regular";
+  font-size: 18px;
+  letter-spacing: 4.75px;
+
+}
+
+.navbar-container img:nth-of-type(2) {
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  width: 28px;
+  height: 25px;
+}
+
+.navbar-menu {
+  height: 100%;
+  width: 254px;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  backdrop-filter: blur(50px);
+}
+
+.navbar-menu img {
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  width: 23px;
+}
+
+.navbar-menu ol {
+  margin: 10px;
+  list-style: none;
+  counter-reset: css-counter -1;
+}
+
+.navbar-menu ol li {
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+  counter-increment: css-counter 1;
+  font-weight: 100;
+}
+
+.navbar-menu ol li::before {
+  content: "0" counter(css-counter);
+  font-weight: 1000;
+  margin-right: 10px;
+}
