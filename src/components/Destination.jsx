@@ -9,23 +9,22 @@ const Destination = () => {
 		destination => destination.name === actualDestination
 	);
 
-	const lowercaseDestination = actualDestination.toLowerCase();
+	const lowerCaseDestination = actualDestination.toLowerCase();
 	const destinationImage =
-		require(`../assets/images/destination/image-${lowercaseDestination}.webp`).default;
+		require(`../assets/images/destination/image-${lowerCaseDestination}.webp`).default;
 
 	return (
 		<div className="destination-container">
-			<div className="background"></div>
 			<h5>pick your destination</h5>
 			<img src={destinationImage} alt="" />
 			<div className="destination-menu">
 				{data.destination.map(destination => (
 					<p
 						key={destination.name}
-						onClick={() => setActualDestination(destination.name)}
 						className={
 							actualDestination === destination.name ? "menuUnderline" : ""
 						}
+						onClick={() => setActualDestination(destination.name)}
 					>
 						{destination.name}
 					</p>

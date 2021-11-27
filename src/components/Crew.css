@@ -1,0 +1,59 @@
+@font-face {
+	font-family: "BarlowCondensed-Regular";
+	src: url("../assets/fonts/BarlowCondensed-Regular.ttf");
+}
+
+@font-face {
+	font-family: "BarlowCondensed-ExtraLight";
+	src: url("../assets/fonts/BarlowCondensed-ExtraLight.ttf");
+}
+
+@font-face {
+	font-family: "Bellefair-Regular";
+	src: url("../assets/fonts/Bellefair-Regular.ttf");
+}
+
+.crew-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url("../assets/images/crew/background-crew-mobile.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	padding-top: 100px;
+	z-index: -1;
+	padding-bottom: 75px;
+}
+
+.crew-container h5 {
+	width: 290px;
+	color: #ffffff;
+	font-family: "BarlowCondensed-Regular";
+	letter-spacing: 4.75px;
+	font-size: 18px;
+	font-weight: 100;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.crew-container h5::before {
+	content: "02";
+	margin-right: 20px;
+	font-weight: 1000;
+	color: #555555;
+}
+
+.image-container {
+	width: 90%;
+	border-bottom: 2px solid #303030;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+	width: 200px;
+	height: 278px;
+}
