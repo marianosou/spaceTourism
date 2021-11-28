@@ -50,7 +50,7 @@
 	height: 220px;
 }
 
-.destination-container div {
+.destination-menu {
 	width: 250px;
 	display: flex;
 	flex-direction: row;

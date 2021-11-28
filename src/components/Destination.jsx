@@ -17,7 +17,7 @@ const Destination = () => {
 		<div className="destination-container">
 			<h5>pick your destination</h5>
 			<img src={destinationImage} alt="" />
-			<div className="destination-menu">
+			<section className="destination-menu">
 				{data.destination.map(destination => (
 					<p
 						key={destination.name}
@@ -29,7 +29,7 @@ const Destination = () => {
 						{destination.name}
 					</p>
 				))}
-			</div>
+			</section>
 			<section className="destination-title">
 				<h1>{destinationData.name}</h1>
 				<p>{destinationData.description}</p>

@@ -1,0 +1,113 @@
+@font-face {
+	font-family: "Barlow-ExtraLight";
+	src: url("../assets/fonts/Barlow-ExtraLight.otf");
+}
+
+@font-face {
+	font-family: "BarlowCondensed-ExtraLight";
+	src: url("../assets/fonts/BarlowCondensed-ExtraLight.otf");
+}
+
+@font-face {
+	font-family: "Bellefair-Regular";
+	src: url("../assets/fonts/Bellefair-Regular.ttf");
+}
+
+.tech-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url("../assets/images/technology/background-technology-mobile.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	padding-top: 100px;
+	z-index: -1;
+	padding-bottom: 75px;
+}
+
+.tech-container h5 {
+	width: 290px;
+	color: #ffffff;
+	font-family: "BarlowCondensed-ExtraLight";
+	letter-spacing: 4.75px;
+	font-size: 18px;
+	font-weight: 100;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.tech-container h5::before {
+	content: "03";
+	margin-right: 20px;
+	font-weight: 1000;
+	color: #555555;
+}
+
+.tech-container img {
+	width: 100%;
+	height: auto;
+}
+
+.tech-menu {
+	width: 120px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 160px;
+	height: 110px;
+}
+
+.tech-menu div {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Bellefair-Regular";
+}
+
+.techUnselected {
+	border: 1px solid #525461;
+    color: #ffffff;
+}
+
+.techSelected {
+	background-color: #ffffff;
+}
+
+.tech-details h3 {
+	color: #d0d6f9;
+	text-transform: uppercase;
+	text-align: center;
+	font-family:  "BarlowCondensed-ExtraLight";
+	font-weight: 100;
+    font-size: 15px;
+    letter-spacing: 2.3px;
+    margin: 0;
+}
+
+.tech-details h1 {
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "Bellefair-Regular";
+	font-weight: 100;
+    margin-top: 10px;
+}
+
+.tech-details p {
+	width: 380px;
+	color: #d0d6f9;
+	font-family: "Barlow-ExtraLight";
+	font-size: 16px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	margin-bottom: 35px;
+	line-height: 28px;
+}
