@@ -1,6 +1,6 @@
 @font-face {
-	font-family: "BarlowCondensed-Regular";
-	src: url("../assets/fonts/BarlowCondensed-Regular.ttf");
+	font-family: "BarlowCondensed-Light";
+	src: url("../assets/fonts/BarlowCondensed-Light.otf");
 }
 
 .navbar-container {
@@ -8,7 +8,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 30px 30px;
-	font-family: "BarlowCondensed-Regular";
+	font-family: "BarlowCondensed-Light";
 	font-size: 18px;
 	letter-spacing: 4.75px;
 }
@@ -60,13 +60,12 @@
 	color: #ffffff;
 	height: 30px;
 	counter-increment: css-counter 1;
-	font-weight: 100;
 	margin-bottom: 25px;
 }
 
 .navbar-menu-options li::before {
 	content: "0" counter(css-counter);
-	font-weight: 1000;
+	font-weight: 600;
 	margin-right: 10px;
 }
 

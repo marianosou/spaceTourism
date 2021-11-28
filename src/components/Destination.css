@@ -1,11 +1,11 @@
 @font-face {
-	font-family: "BarlowCondensed-Regular";
-	src: url("../assets/fonts/BarlowCondensed-Regular.ttf");
+	font-family: "Barlow-ExtraLight";
+	src: url("../assets/fonts/Barlow-ExtraLight.otf");
 }
 
 @font-face {
 	font-family: "BarlowCondensed-ExtraLight";
-	src: url("../assets/fonts/BarlowCondensed-ExtraLight.ttf");
+	src: url("../assets/fonts/BarlowCondensed-ExtraLight.otf");
 }
 
 @font-face {
@@ -31,12 +31,11 @@
 .destination-container h5 {
 	width: 290px;
 	color: #ffffff;
-	font-family: "BarlowCondensed-Regular";
+	font-family: "BarlowCondensed-ExtraLight";
 	letter-spacing: 4.75px;
 	font-size: 18px;
 	font-weight: 100;
 	text-transform: uppercase;
-	text-align: center;
 }
 
 .destination-container h5::before {
@@ -58,19 +57,11 @@
 	justify-content: space-between;
 }
 
-.destination-container > p {
-	width: 400px;
-	color: #d0d6f9;
-	font-family: "BarlowCondensed-ExtraLight";
-	font-size: 18px;
-	text-align: center;
-	letter-spacing: 1.75px;
-}
-
 .destination-menu p {
 	color: #d0d6f9;
 	text-transform: uppercase;
-	font-family: "BarlowCondensed-Regular";
+	font-family: "BarlowCondensed-ExtraLight";
+	letter-spacing: 2px;
 }
 
 .menuUnderline {
@@ -99,11 +90,12 @@
 .destination-title p {
 	width: 400px;
 	color: #d0d6f9;
-	font-family: "BarlowCondensed-ExtraLight";
-	font-size: 18px;
+	font-family: "Barlow-ExtraLight";
+	font-size: 16px;
 	text-align: center;
-	letter-spacing: 1.75px;
+	letter-spacing: 0.5px;
 	margin-bottom: 35px;
+	line-height: 28px;
 }
 
 hr {
@@ -116,7 +108,7 @@ hr {
 .destination-details h6 {
 	color: #d0d6f9;
 	text-transform: uppercase;
-	font-family: "BarlowCondensed-Regular";
+	font-family: "BarlowCondensed-ExtraLight";
 	font-weight: 100;
 	font-size: 18px;
 	letter-spacing: 2.75px;

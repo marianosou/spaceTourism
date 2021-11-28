@@ -1,11 +1,11 @@
 @font-face {
-	font-family: "BarlowCondensed-Regular";
-	src: url("../assets/fonts/BarlowCondensed-Regular.ttf");
+	font-family: "Barlow-Regular";
+	src: url("../assets/fonts/Barlow-Regular.otf");
 }
 
 @font-face {
 	font-family: "BarlowCondensed-ExtraLight";
-	src: url("../assets/fonts/BarlowCondensed-ExtraLight.ttf");
+	src: url("../assets/fonts/BarlowCondensed-ExtraLight.otf");
 }
 
 @font-face {
@@ -31,7 +31,7 @@
 .crew-container h5 {
 	width: 290px;
 	color: #ffffff;
-	font-family: "BarlowCondensed-Regular";
+	font-family: "BarlowCondensed-ExtraLight";
 	letter-spacing: 4.75px;
 	font-size: 18px;
 	font-weight: 100;
@@ -48,12 +48,65 @@
 
 .image-container {
 	width: 90%;
-	border-bottom: 2px solid #303030;
-    display: flex;
-    justify-content: center;
+	border-bottom: 1px solid #383b4b;
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
 }
 
 .image-container img {
-	width: 200px;
-	height: 278px;
+	width: 50%;
+	height: auto;
+}
+
+.crew-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 120px;
+	height: 80px;
+}
+
+.crew-menu div {
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+}
+
+.crewUnselected {
+	background-color: #4e4e4e;
+}
+
+.crewSelected {
+	background-color: #ffffff;
+}
+
+.crew-details h3 {
+	color: #878282;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "Bellefair-Regular";
+	font-weight: 100;
+    margin: 0;
+}
+
+.crew-details h1 {
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "Bellefair-Regular";
+	font-weight: 100;
+    margin-top: 10px;
+}
+
+.crew-details p {
+	width: 400px;
+	color: #d0d6f9;
+	font-family: "Barlow-ExtraLight";
+	font-size: 16px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	margin-bottom: 35px;
+	line-height: 28px;
 }
