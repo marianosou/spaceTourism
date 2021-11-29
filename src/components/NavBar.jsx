@@ -1,7 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Link, useHistory } from "react-router-dom";
 import "./NavBar.css";
 import data from "../assets/data/data.json";
+
+const useClickOutside = handler => {
+	const domNode = useRef();
+
+	useEffect(() => {
+		let maybeHandler = event => {
+			if (!domNode.current.contains(event.target)) {
+				handler();
+			}
+		};
+
+		document.addEventListener("mousedown", maybeHandler);
+
+		return () => {
+			document.removeEventListener("mousedown", maybeHandler);
+		};
+	});
+
+	return domNode;
+};
 
 const NavBar = () => {
 	const [showMenu, setShowMenu] = useState(false);
@@ -10,6 +30,10 @@ const NavBar = () => {
 	const pathname = useHistory().location.pathname;
 
 	const capitalize = word => word.charAt(0).toUpperCase() + word.slice(1);
+
+	const domNode = useClickOutside(() => {
+		setShowMenu(false);
+	});
 
 	return (
 		<nav className="navbar-container">
@@ -23,14 +47,19 @@ const NavBar = () => {
 			) : (
 				""
 			)}
-			<div className={!showMenu ? "navbar-menu-hidden" : "navbar-menu"}>
+			<div
+				className={!showMenu ? "navbar-menu-hidden" : "navbar-menu"}
+				ref={domNode}
+			>
 				<img
 					src="icons/icon-close.svg"
 					alt=""
 					onClick={() => setShowMenu(false)}
 				/>
 				<ol
-					className={!showMenu ? "navbar-menu-options-hidden" : "navbar-menu-options"}
+					className={
+						!showMenu ? "navbar-menu-options-hidden" : "navbar-menu-options"
+					}
 					onClick={() => setShowMenu(false)}
 				>
 					<Link to="/">
