@@ -8,10 +8,10 @@ const Technology = () => {
 	const techData = data.technology.find(
 		technology => technology.name === actualTech
 	);
-
-	const lowerCaseTech = actualTech.replace(/\s+/g, "-").toLowerCase();
+	
+	let techName = actualTech.toLocaleLowerCase().split(" ").join("-");
 	const techImage =
-		require(`../assets/images/technology/image-${lowerCaseTech}-landscape.jpg`).default;
+		require(`../assets/images/technology/image-${techName}-portrait.jpg`).default;
 
 	return (
 		<div className="tech-container">

@@ -8,10 +8,9 @@ const Destination = () => {
 	const destinationData = data.destination.find(
 		destination => destination.name === actualDestination
 	);
-
-	const lowerCaseDestination = actualDestination.toLowerCase();
-	const destinationImage =
-		require(`../assets/images/destination/image-${lowerCaseDestination}.webp`).default;
+	
+	let destinationName = actualDestination.toLocaleLowerCase()
+	const destinationImage = require(`../assets/images/destination/image-${destinationName}.webp`).default;
 
 	return (
 		<div className="destination-container">

@@ -7,9 +7,9 @@ const Crew = () => {
 
 	const crewData = data.crew.find(member => member.name === actualCrew);
 
-	const lowerCaseCrew = actualCrew.replace(/\s+/g, "-").toLowerCase();
+	let crewName = actualCrew.toLocaleLowerCase().split(" ").join("-");
 	const crewImage =
-		require(`../assets/images/crew/image-${lowerCaseCrew}.webp`).default;
+		require(`../assets/images/crew/image-${crewName}.webp`).default;
 
 	return (
 		<div className="crew-container">
